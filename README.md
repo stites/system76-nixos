@@ -24,6 +24,10 @@ Repositories tracked (and releases):
 
 [stites]: https://github.com/stites
 
+### Discovered kernel modules you should probably load (for all system76 models)
+
+See full list [system76-driver:system76driver/daemon.py](https://github.com/pop-os/system76-driver/blob/34c87f2a1ceb62fe95c1a0509bf2baf2949180c0/system76driver/daemon.py) for correct kernel modules which should be loaded.
+
 ### How to use
 
 clone this repo in your `/etc/nixos/` folder. Add this folder as an import in `/etc/nixos/configuration.nix` and **remember to allowUnfree software if you have a system76 laptop with GPU support**:
