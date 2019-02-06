@@ -11,9 +11,9 @@ I'm only going to claim to support the 2018 Oryx Pro build (oryp4) since it's th
 On oryp4 support: the only comprehensive discussion for a non-ubuntu build that I could find was [_Installing Archlinux on System76's 2018 Oryx Pro (oryp4)_](https://ebobby.org/2018/07/15/archlinux-on-oryp4/) ([permalink](https://perma.cc/JQ7V-2FGN)).
 
 Repositories tracked (and releases):
-- [pop-os/system76-firmware](https://github.com/pop-os/system76-firmware). Release 1.0.2 (05/08/2019)
-- [pop-os/system76-dkms](https://github.com/pop-os/system76-dkms). Release: 1.0.3 (01/29/2019)
-- [pop-os/system76-driver](https://github.com/pop-os/system76-driver). Release: 19.04.2 (01/31/2019)
+- [pop-os/system76-firmware](https://github.com/pop-os/system76-firmware). Latest release 1.0.2 (05/08/2019)
+- [pop-os/system76-dkms](https://github.com/pop-os/system76-dkms). Latest release: 1.0.4 (02/06/2019)
+- [pop-os/system76-driver](https://github.com/pop-os/system76-driver). Latest release: 19.04.2 (01/31/2019)
 
 [stites]: https://github.com/stites
 
@@ -21,7 +21,7 @@ Repositories tracked (and releases):
 
 clone this repo in your `/etc/nixos/` folder. Add this folder as an import in `/etc/nixos/configuration.nix` and **remember to allowUnfree software if you have a system76 laptop with GPU support**:
 
-`
+```
 # in /etc/nixos/configuration.nix
 {
   # for nvidia-supported laptops
@@ -40,5 +40,6 @@ clone this repo in your `/etc/nixos/` folder. Add this folder as an import in `/
      "${builtins.fetchGit { url="https://github.com/stites/system76-nixos"; ref="master"; }}/if-you-want-a-specific-file.nix"
    ]
 }
+```
 
 
