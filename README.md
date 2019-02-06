@@ -10,10 +10,18 @@ I'm only going to claim to support the 2018 Oryx Pro build (oryp4) since it's th
 
 On oryp4 support: the only comprehensive discussion for a non-ubuntu build that I could find was [_Installing Archlinux on System76's 2018 Oryx Pro (oryp4)_](https://ebobby.org/2018/07/15/archlinux-on-oryp4/) ([permalink](https://perma.cc/JQ7V-2FGN)).
 
+Supported graphics for cuda: nvidia-410. Might need to check out [system76/cuda](https://github.com/system76/cuda) for compute support.
+
 Repositories tracked (and releases):
 - [pop-os/system76-firmware](https://github.com/pop-os/system76-firmware). Latest release 1.0.2 (05/08/2019)
 - [pop-os/system76-dkms](https://github.com/pop-os/system76-dkms). Latest release: 1.0.4 (02/06/2019)
 - [pop-os/system76-driver](https://github.com/pop-os/system76-driver). Latest release: 19.04.2 (01/31/2019)
+- [pop-os/system76-driver](https://github.com/pop-os/system76-driver). Latest release: 19.04.2 (01/31/2019)
+- [pop-os/system76-power](https://github.com/pop-os/system76-power). Latest release: master (02/06/2019)
+- [pop-os/hidpi-daemon](https://github.com/pop-os/hidpi-daemon). Latest release: 18.04.4 (08/01/2018)
+- [pop-os/gtk-theme](https://github.com/pop-os/gtk-theme) (low priority). Latest release: 4.0.0-b2 (08/09/2018)
+- [pop-os/system76-wallpapers](https://github.com/pop-os/system76-wallpapers) (low priority). Latest release: master (02/06/2019)
+- [pop-os/system76-io-dkms](https://github.com/pop-os/system76-io-dkms) (low priority, theilo only). Latest release: 1.0.0 (12/04/2018)
 
 [stites]: https://github.com/stites
 
