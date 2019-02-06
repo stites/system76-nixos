@@ -19,9 +19,18 @@ stdenv.mkDerivation {
     sed -e "s@/lib/modules/\$(.*)@${kernel.dev}/lib/modules/${kernel.modDirVersion}@" -i Makefile
   '';
 
+  outputs = [ "out" ];
+
   installPhase = ''
     mkdir -p $out/lib/modules/${kernel.modDirVersion}/misc
     cp system76.ko $out/lib/modules/${kernel.modDirVersion}/misc
+
+    # not sure if these are working
+    mkdir -p $out/usr/share/initramfs-tools/hooks
+    cp {$src,$out}/usr/share/initramfs-tools/hooks/system76-dkms
+
+    mkdir -p $out/usr/share/initramfs-tools/modules.d
+    cp {$src,$out}/usr/share/initramfs-tools/modules.d/system76-dkms.conf
   '';
 
   meta = with stdenv.lib; {
