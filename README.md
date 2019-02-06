@@ -16,7 +16,6 @@ Repositories tracked (and releases):
 - [pop-os/system76-firmware](https://github.com/pop-os/system76-firmware). Latest release 1.0.2 (05/08/2019)
 - [pop-os/system76-dkms](https://github.com/pop-os/system76-dkms). Latest release: 1.0.4 (02/06/2019)
 - [pop-os/system76-driver](https://github.com/pop-os/system76-driver). Latest release: 19.04.2 (01/31/2019)
-- [pop-os/system76-driver](https://github.com/pop-os/system76-driver). Latest release: 19.04.2 (01/31/2019)
 - [pop-os/system76-power](https://github.com/pop-os/system76-power). Latest release: master (02/06/2019)
 - [pop-os/hidpi-daemon](https://github.com/pop-os/hidpi-daemon). Latest release: 18.04.4 (08/01/2018)
 - [pop-os/gtk-theme](https://github.com/pop-os/gtk-theme) (low priority). Latest release: 4.0.0-b2 (08/09/2018)
