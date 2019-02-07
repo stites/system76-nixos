@@ -4,7 +4,9 @@ Supported models
 
 | Model                | Contributors      | Status |
 | -------------------- | ----------------- | ------ |
-| `oryp4`              | [stites][stites]  | Nonexistent, active delevopment |
+| `oryp4`              | [stites][stites]  | Active development |
+
+[stites]: https://github.com/stites
 
 I'm only going to claim to support the 2018 Oryx Pro build (oryp4) since it's the one I actively use. That said, this repo will try to add nixos support to all system76-development repositories, attempting to reach parity with [system76-dev's stable PPA](https://launchpad.net/~system76-dev/+archive/ubuntu/stable). This _does_ mean that this repo will be opinionated about which kernels you can support.
 
@@ -12,17 +14,19 @@ On oryp4 support: the only comprehensive discussion for a non-ubuntu build that 
 
 Supported graphics for cuda: nvidia-410. Might need to check out [system76/cuda](https://github.com/system76/cuda) for compute support.
 
-Repositories tracked (and releases):
-- [pop-os/system76-firmware](https://github.com/pop-os/system76-firmware). Latest release 1.0.2 (05/08/2019)
-- [pop-os/system76-dkms](https://github.com/pop-os/system76-dkms). Latest release: 1.0.4 (02/06/2019)
-- [pop-os/system76-driver](https://github.com/pop-os/system76-driver). Latest release: 19.04.2 (01/31/2019)
-- [pop-os/system76-power](https://github.com/pop-os/system76-power). Latest release: master (02/06/2019)
-- [pop-os/hidpi-daemon](https://github.com/pop-os/hidpi-daemon). Latest release: 18.04.4 (08/01/2018)
-- [pop-os/gtk-theme](https://github.com/pop-os/gtk-theme) (low priority). Latest release: 4.0.0-b2 (08/09/2018)
-- [pop-os/system76-wallpapers](https://github.com/pop-os/system76-wallpapers) (low priority). Latest release: master (02/06/2019)
-- [pop-os/system76-io-dkms](https://github.com/pop-os/system76-io-dkms) (low priority, theilo only). Latest release: 1.0.0 (12/04/2018)
+Repositories tracked (as well as last known release and status):
 
-[stites]: https://github.com/stites
+| Package                                                              | Last known release | Last release date | Last checked | Notes  |
+| -------------------------------------------------------------------- | ------------------ | ----------------- | ------------ | ------ |
+| [system76-firmware](https://github.com/pop-os/system76-firmware)     | 1.0.2              | 05/08/2019        | 02/06/2018   | untested |
+| [system76-dkms](https://github.com/pop-os/system76-dkms)             | 1.0.4              | 02/06/2019        | 02/06/2018   | untested |
+| [system76-driver](https://github.com/pop-os/system76-driver)         | 19.04.2            | 01/31/2019        | 02/06/2018   | incomplete |
+| [system76-power](https://github.com/pop-os/system76-power)           | none               | 02/06/2019        | 02/06/2018   | incomplete |
+| [hidpi-daemon](https://github.com/pop-os/hidpi-daemon)               | 18.04.4            | 08/01/2018        | 02/06/2018   | incomplete |
+| [gtk-theme](https://github.com/pop-os/gtk-theme)                     | 4.0.0-b2           | 08/09/2018        | 02/06/2018   | incomplete, low priority |
+| [system76-wallpapers](https://github.com/pop-os/system76-wallpapers) | none               | 02/06/2019        | 02/06/2018   | incomplete, low priority |
+| [system76-io-dkms](https://github.com/pop-os/system76-io-dkms)       | 1.0.0              | 12/04/2018        | 02/06/2018   | incomplete, low priority, theilo only |
+
 
 ### Discovered kernel modules you should probably load (for all system76 models)
 
