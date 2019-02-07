@@ -4,13 +4,11 @@ let
     packageOverrides = pkgs: {
       linuxPackages = pkgs.linuxPackages.extend(self: super: {
         system76-dkms = self.callPackage ./system76-dkms {};
+        system76-firmware = self.callPackage ./system76-firmware {};
       });
     };
   };
 
-      # linuxPackages_latest = super.linuxPackages_latest.extend(lpself: lpsuper: {
-      #   system76-dkms = (lpself.callPackage ./system76-dkms {}).stable;
-      # });
   pkgs = import ((import <nixpkgs> {}).fetchFromGitHub {
     owner  = "NixOS";
     repo   = "nixpkgs-channels";
@@ -23,4 +21,5 @@ in with pkgs; {
   system76-dkms_stable       = linuxPackages.system76-dkms.stable;
   system76-dkms_legacy_1_0_1 = linuxPackages.system76-dkms.legacy_1_0_1;
   system76-dkms_legacy_1_0_0 = linuxPackages.system76-dkms.legacy_1_0_0;
+  system76-firmware          = linuxPackages.system76-firmware;
 }
