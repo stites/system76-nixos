@@ -12,7 +12,10 @@ stdenv.mkDerivation {
     };
 
   hardeningDisable = [ "pic" ];
+  dontStrip = true;
+  dontPatchELF = true;
 
+  kernel = kernel.dev;
   nativeBuildInputs = kernel.moduleBuildDependencies;
 
   preBuild = ''
@@ -20,7 +23,6 @@ stdenv.mkDerivation {
   '';
 
   outputs = [ "out" ];
-
   installPhase = ''
     mkdir -p $out/lib/modules/${kernel.modDirVersion}/misc
     cp system76.ko $out/lib/modules/${kernel.modDirVersion}/misc
