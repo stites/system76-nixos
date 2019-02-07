@@ -11,7 +11,7 @@
   nixpkgs.overlays = [
     (self: super: {
       linuxPackages_latest = super.linuxPackages_latest.extend(lpself: lpsuper: {
-        system76-dkms = (lpself.callPackage ./system76-dkms.nix {}).stable;
+        system76-dkms = (lpself.callPackage ./system76-dkms {}).stable;
       });
     })
   ];
