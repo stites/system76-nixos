@@ -6,8 +6,8 @@ in
 
 rec {
   beta = generic {
-    version = "1.0.4";
-    sha = "03fm40gf9962jcwb4yj90pa2269nlbg1w2wpwaa8j2kq9263fkh2";
+    version = "1.0.6";
+    sha = "0263aqm0aibnfhy1m99nj36c7p2327a3aqk5by2nm2mjm3sqr5zc";
   };
   stable = generic {
     version = "1.0.3";
