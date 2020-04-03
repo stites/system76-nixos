@@ -4,17 +4,16 @@ Supported models
 
 | Model                | Contributors      | Status |
 | -------------------- | ----------------- | ------ |
-| `oryp4`              | [stites][stites]  | Active development |
+| `oryp4`              | [stites][stites]  |  |
 | `darp6`              | [khumba][khumba]  |        |
 
 [stites]: https://github.com/stites
 [khumba]: https://github.com/khumba
 
-I'm only going to claim to support the 2018 Oryx Pro build (oryp4) since it's the one I actively use. That said, this repo will try to add nixos support to all system76-development repositories, attempting to reach parity with [system76-dev's stable PPA](https://launchpad.net/~system76-dev/+archive/ubuntu/stable). This _does_ mean that this repo will be opinionated about which kernels you can support.
+
+This repo was/is an attempt to add nixos support to all system76-development repositories, attempting to reach parity with [system76-dev's stable PPA](https://launchpad.net/~system76-dev/+archive/ubuntu/stable). This _does_ mean that this repo may be opinionated about which kernels you can support. *I ([stites][stites]) am no longer maintaining this repository and am planning on pushing it up to https://github.com/NixOS/nixos-hardware -- feel free to initiate this effort* 
 
 On oryp4 support: the only comprehensive discussion for a non-ubuntu build that I could find was [_Installing Archlinux on System76's 2018 Oryx Pro (oryp4)_](https://ebobby.org/2018/07/15/archlinux-on-oryp4/) ([permalink](https://perma.cc/JQ7V-2FGN)).
-
-Supported graphics for cuda: nvidia-410. Might need to check out [system76/cuda](https://github.com/system76/cuda) for compute support.
 
 Repositories tracked (as well as last known release and status):
 
